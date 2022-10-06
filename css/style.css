@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    background-color: rgb(182, 182, 182);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+
+.navlinks a{
+    color: rgb(255, 255, 255);
+    margin: 0 20px;
+}
+
+.request{
+    background-color: rgb(43, 226, 83);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+.heroimg{
+    width: 40%;
+}
+
+#hero div{
+    width: 40%;
+}
+
+.heroh1 {
+    font-size: 60px;
+}
+.herop{
+    font-size: 20px;
+    margin: 20px 0 30px;
+}
+
+#about{
+    padding: 20px 70px;
+}
+
+.abouticon{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0 0px;
+    gap: 40px;
+}
+
+#about div h1{
+    margin-top: 30px;
+}
+
