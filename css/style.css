@@ -54,13 +54,98 @@ a{
 }
 
 .abouticon{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 50px 0 0px;
-    gap: 40px;
+    
 }
 
 #about div h1{
     margin-top: 30px;
 }
 
+.abouth1{
+    font-size: 60px;
+    padding: 30px 0;
+}
+
+.aboutheader{
+    width: 47%;
+    font-size: 20px;
+}
+
+.abouticon h1{
+    margin-bottom: 20px;
+}
+
+#articles{
+    padding: 20px 70px; 
+    margin-top: 150px;
+}
+
+.articlewrt{
+    font-size: 30px;
+}
+
+.articleicons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 50px 0 0px;
+    gap: 30px;
+}
+
+.articleimg{
+    width: 100%;
+}
+
+.articleicons div p{
+    margin: 20px 0 20px;
+}
+
+.articleDiv{
+    box-shadow: 5px 5px 10px rgb(197, 197, 197);
+}
+
+.articleDiv div{
+    padding: 0 16px;
+}
+
+#bottom{
+    background-color: rgb(15, 15, 67);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 0;
+    color: white;
+    padding: 50px 40px 20px;
+}
+
+
+.icon a{
+    color: white;
+
+}
+
+.blog{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px 0 20px;
+}
+
+.bottomimg{
+    padding: 0 0 50px;
+}
+
+.blog1{
+    padding-right: 120px;
+}
+
+.blog p{
+    margin: 10px;
+}
+
+.easy a{
+    margin: 20px 10px 50px;
+}
+
+.easy p{
+    padding: 30px 0 20px;
+}
