@@ -5,6 +5,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+html, body{
+    overflow-x: hidden;
+}
+
 a{
     text-decoration: none;
 }
@@ -51,7 +55,8 @@ a{
 }
 
 #about{
-    padding: 20px 70px;
+    padding: 40px 70px 120px;
+    background-color: rgb(241, 241, 241);
 }
 
 .abouticon{
@@ -137,10 +142,17 @@ a{
 
 .bottomimg{
     padding: 0 0 50px;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
 }
 
-.blog1{
-    /* padding-right: 120px; */
+.blog a{
+    color: #fff;
+}
+
+.blog1, .blog2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .blog p{
@@ -153,4 +165,162 @@ a{
 
 .easy p{
     padding: 30px 0 20px;
+}
+
+@media screen and (max-width:992px) {
+    #navbar{
+        padding:20px 50px;
+    }
+
+    #hero, #about, #articles{
+        padding: 40px 30px;
+    }
+
+    .heroh1, .abouth1{
+        font-size: 40px;
+    }
+
+    .firstImg{
+        height: 24%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #navbar{
+        padding:10px 30px;
+    }
+
+    .heroh1,.aboutheader h1, .articlewrt h1{
+        font-size: 27px;
+    }
+
+    .herop, .aboutheader p, .abouticon p{
+        font-size: 15px;
+    }
+
+    .request{
+        border-radius: 30px;
+    }
+
+    
+    .abouticon{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .abouticon h1{
+        font-size: 20px;
+    }
+
+    #articles{
+        margin-top: 20px;
+    }
+
+    .articleDiv h1{
+        font-size: 20px;
+    }
+
+    .articleDiv p:first-child{
+        font-size: 12px;
+        margin: 15px 0 15px;
+    }
+
+    .articleDiv p:second-child{
+        font-size: 16px;
+        margin: 10px 0 10px;
+    }
+
+    .articleicons{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 20px 0 0;
+
+    }
+
+    .firstImg{
+        height: 40%;
+    }
+
+    #bottom{
+        padding: 50px 20px 20px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #hero{
+        flex-direction: column-reverse;
+    }
+
+    .heroimg, #hero div{
+        width: 90%;
+        text-align: center;
+    }
+    .aboutheader{
+        width: 75%;
+    }
+
+    .articleicons{
+        grid-template-columns: 1fr;
+    }
+
+    .articleDiv{
+        width: 65%;
+        margin: 5px auto;
+    }
+
+    .easy, .bottomLogo{
+        text-align: center;
+    }
+
+    #bottom{
+        flex-direction: column;
+    }
+
+    .blog{
+        place-content: center;
+        place-items: center;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    .aboutheader{
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .abouticon{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .articleDiv{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .articleicons{
+        width: 100%;
+    }
+
+    .firstImg{
+        height: 30%;
+    }
+
+    .blog{
+       grid-template-columns: 1fr;
+       gap: 10px;
+    }
+
+    .blog1, .blog2{
+        align-items: center; 
+    }
+
+    #hero, #about, #articles{
+        padding: 30px 7px;
+    }
+    
 }
